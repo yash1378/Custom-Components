@@ -1,0 +1,32 @@
+.input{
+    /* border:2px solid red; */
+    height: 3vh;
+    width: 20vw;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.suggestions {
+    /* Your suggestions list styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    width: 20.3vw;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #f1f1f1;
+}
