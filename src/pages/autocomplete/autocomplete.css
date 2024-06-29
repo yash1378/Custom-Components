@@ -1,0 +1,17 @@
+.autocomplete {
+    display: flex;
+    flex-direction: column;
+    top: 5vh;
+    left: 40%;
+    width: 25vw;
+    align-items: center;
+    /* border:2px solid red; */
+    position: absolute; /* Ensure the position is set for top and left to work */
+  }
+  
+  .heading{
+    margin-bottom: 10px;
+    font-size: 5vh;
+    font-weight: bold;
+  }
+  

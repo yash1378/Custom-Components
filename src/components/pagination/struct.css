@@ -1,0 +1,110 @@
+.products{
+    /* border:2px solid red; */
+    /* margin:10px; */
+    padding:20px;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap:20px 25px;
+}
+
+.products__single{
+    /* border: 2px solid blue; */
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Basic shadow */
+    background-color: rgb(220,220,220);
+    transition: transform 0.2s ease-in-out; 
+    cursor:pointer;
+}
+
+.image{
+    width: 60%;
+    height: 70%;
+    margin: 30px;
+    object-fit: cover; /* Maintain aspect ratio and cover parent */
+    /* border: 2px solid green; */
+}
+
+
+
+.products__single:hover {
+    transform: scale(1.05); /* Increase size on hover */
+}
+
+.loading-indicator {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Soft shadow */
+}
+
+.loading-indicator::before {
+    content: '';
+    width: 24px; /* Size of the spinner */
+    height: 24px;
+    border: 3px solid #ccc; /* Spinner border */
+    border-top-color: #888; /* Spinner color */
+    border-radius: 50%; /* Circle shape */
+    animation: spin 0.8s linear infinite; /* Animation */
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg); /* Full rotation */
+    }
+}
+
+.navi {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+ /* Soft shadow */
+}
+
+.navi_child{
+    /* border: 2px solid blue; */
+    width: 3vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.left {
+    background-color: rgb(4, 155, 165);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.right {
+    background-color: rgb(4, 155, 165);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #f0f0f0; /* Example background color for active page */
+    color: #333; /* Example text color for active page */
+    font-weight: bold; /* Example font weight for active page */
+    cursor: pointer;
+}
+

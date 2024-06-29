@@ -6,6 +6,7 @@ import AutoComplete from './pages/autocomplete/AutoComplete';
 import UseCallback from './pages/useCallback/UseCallback';
 import UseRef from './pages/useRef/UseRef';
 import Pagination from './pages/pagination/Pagination';
+import ProgressBar from './pages/progressbar/ProgressBar';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/usecallback" element={<UseCallback/>}/>
           <Route path="/useref" element={<UseRef/>}/>
           <Route path="/pagination/:id" element={<Pagination/>}/>
+          <Route path="/progressbar" element={<ProgressBar/>}/>
       </Routes>
     </BrowserRouter>
   );
