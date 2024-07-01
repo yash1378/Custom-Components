@@ -1,5 +1,4 @@
 import { useCallback, useState } from "react";
-import ReactDOM from "react-dom/client";
 import Todos from "../../components/callback/Todos";
 
 const UseCallback = () => {

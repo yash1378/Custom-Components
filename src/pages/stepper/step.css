@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.page{
+    /* border: 2px solid blue; */
+}
+
+/* style.css */
+
+/* style.css */
+
+.status-container {
+    text-align: center;
+    margin-top: 20px;
+    /* padding: 10px; */
+    /* background-color: #f0f0f0; */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    height: 100%;
+    /* border: 2px solid #6710d8; */
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.status-text:hover {
+    background-color: #580fa0;
+    color: #ffffff;
+    border-color: #007bff;
+}
